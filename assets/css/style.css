@@ -30,6 +30,8 @@ a {
 }
 .btn--primary {
 }
+.btn--secondary {
+}
 
 .container {
   width: min(100% - 40px, 1110px);
