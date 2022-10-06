@@ -24,13 +24,17 @@ a {
   max-width: 170px;
   min-height: 40px;
   padding: 0.25em 1em;
-  border: 2px solid #f13c6e;
   border-radius: 40px;
-  background-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
 }
 .btn--primary {
+  border-color: #f13c6e;
+  background-color: #ffffff;
 }
 .btn--secondary {
+  border-color: #ffffff;
+  background-color: #f13c6e;
 }
 
 .container {
@@ -93,6 +97,41 @@ a {
   padding: 10px;
   font-size: 1rem;
   color: #000000;
+}
+
+.main {
+}
+.hero {
+  min-height: 604px;
+  background-color: #f03c6e;
+  color: #ffffff;
+  padding: 192px 0;
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 82% 50%;
+}
+.hero__content {
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0;
+}
+.hero__description {
+  line-height: 1.43;
+}
+.hero__actions {
+}
+.hero__buttons {
+}
+.btn {
+}
+.btn--secondary {
 }
 
 @media (max-width: 768px) {
