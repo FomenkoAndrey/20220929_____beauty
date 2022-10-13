@@ -1,0 +1,32 @@
+.hero {
+  min-height: 604px;
+  padding: 192px 0;
+
+  color: $color-white;
+  background-color: $color-accent;
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-position: 82% 50%;
+  background-size: contain;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 375px;
+
+    gap: $gap-lg;
+  }
+
+  &__title {
+    margin: 0;
+
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  &__description {
+    line-height: 1.43;
+  }
+
+}

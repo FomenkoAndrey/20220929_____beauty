@@ -1,0 +1,25 @@
+.navbar-info {
+  margin-bottom: 1px;
+  padding: $gap 0;
+
+  background-color: $color-light;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+
+  gap: $gap-sm $gap-lg;
+
+  &__phone {
+    color: $color-primary;
+
+    font-size: 1rem;
+  }
+}

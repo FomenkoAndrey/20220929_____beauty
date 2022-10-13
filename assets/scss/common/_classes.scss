@@ -1,0 +1,29 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 170px;
+  min-height: 40px;
+  padding: 0.25em 1em;
+
+  border-width: 2px;
+  border-style: solid;
+  border-radius: $gap-lg;
+
+  &--primary {
+    border-color: $color-accent;
+    background-color: $color-white;
+  }
+
+  &--secondary {
+    border-color: $color-white;
+    background-color: $color-accent;
+  }
+}
+
+.container {
+  width: min(100% - $gap-lg, $width);
+
+  margin-inline: auto;
+}
