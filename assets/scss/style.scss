@@ -1,25 +1,11 @@
-@import "libs/normalize";
+@use "libs/normalize";
 
-@import "presets/skins";
-@import "presets/variables";
+@use "common";
 
-@import "common/typography";
-@import "common/classes";
+//@import "header/navbar-secondary";
+//@import "header/navbar-info";
+//@import "header/navbar-primary";
 
-@import "header/navbar-secondary";
-@import "header/navbar-info";
-@import "header/navbar-primary";
+//@import "main/hero";
 
-@import "main/hero";
-
-@media (max-width: 768px) {
-  .navbar-info__container {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 400px) {
-  .feedback {
-    flex-direction: column;
-  }
-}
+//@use "media";

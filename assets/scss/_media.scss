@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  .navbar-info__container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .feedback {
+    flex-direction: column;
+  }
+}
