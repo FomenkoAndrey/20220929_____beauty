@@ -1,11 +1,5 @@
 @use "libs/normalize";
 
 @use "common";
-
-//@import "header/navbar-secondary";
-//@import "header/navbar-info";
-//@import "header/navbar-primary";
-
-//@import "main/hero";
-
-//@use "media";
+@use "header";
+@use "main";

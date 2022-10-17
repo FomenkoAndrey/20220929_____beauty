@@ -1,3 +1,6 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
 .navbar-secondary {
   padding: 7px 0;
 
@@ -11,12 +14,12 @@
 
     list-style: none;
 
-    gap: 0 $gap-sm;
+    gap: 0 $gap-xs;
   }
 
   &__link {
     display: block;
 
-    padding: $gap-sm;
+    padding: $gap-xs;
   }
 }

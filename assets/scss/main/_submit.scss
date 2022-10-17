@@ -1,0 +1,58 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.submit {
+  &__container {
+    display: flex;
+    gap: $gap-lg;
+  }
+
+  &__title {
+    @include visually-hidden;
+  }
+}
+
+%match {
+  background-color: $color-accent;
+  padding: 35px 40px;
+  flex: 1;
+  color: $color-white;
+}
+
+%match-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: $line-height-sm;
+  max-width: 250px;
+}
+
+%match-description {
+  font-size: 0.875rem;
+  line-height: $line-height-lg;
+  max-width: 250px;
+}
+
+
+.subscribe {
+  @extend %match;
+
+  &__title {
+    @extend %match-title;
+  }
+
+  &__description {
+    @extend %match-description;
+  }
+}
+
+.location {
+  @extend %match;
+
+  &__title {
+    @extend %match-title;
+  }
+
+  &__description {
+    @extend %match-description;
+  }
+}

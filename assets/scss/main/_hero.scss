@@ -1,21 +1,51 @@
-.hero {
-  min-height: 604px;
-  padding: 192px 0;
+@use "../presets" as *;
+@use "../mixins" as *;
 
+.hero {
   color: $color-white;
   background-color: $color-accent;
   background-image: url(../img/hero.png);
   background-repeat: no-repeat;
-  background-position: 82% 50%;
   background-size: contain;
+
+  @include xl-min {
+    padding: 192px 0;
+    min-height: 604px;
+    background-position: 82% 50%;
+  }
+
+  @include xl-lg {
+    padding: 140px 0;
+    background-position: 95% 50%;
+  }
+
+  @include lg-md {
+    padding: 100px 0;
+    background-position: 95% 50%;
+  }
+  @include md-sm {
+    padding: 80px 0;
+    background-position: 140% 50%;
+  }
+
+  @include sm {
+    padding: 50px 0;
+    background-image: none;
+  }
 
   &__content {
     display: flex;
     flex-direction: column;
 
-    max-width: 375px;
+    gap: $gap-xl;
 
-    gap: $gap-lg;
+    @include sm-min {
+      max-width: 375px;
+    }
+    @include sm {
+      align-items: center;
+      text-align: center;
+    }
   }
 
   &__title {
@@ -26,7 +56,6 @@
   }
 
   &__description {
-    line-height: 1.43;
+    line-height: $line-height-lg;
   }
-
 }

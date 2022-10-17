@@ -1,4 +1,5 @@
 @use "../presets" as *;
+@use "../mixins" as *;
 
 .btn {
   display: flex;
@@ -11,7 +12,7 @@
 
   border-width: 2px;
   border-style: solid;
-  border-radius: $gap-lg;
+  border-radius: $gap-xl;
 
   &--primary {
     border-color: $color-accent;
@@ -22,10 +23,18 @@
     border-color: $color-white;
     background-color: $color-accent;
   }
+
+  &--sm {
+    width: 130px;
+    min-height: 35px;
+    border-color: $color-accent;
+    background-color: $color-accent;
+    color: white;
+  }
 }
 
 .container {
-  width: min(100% - $gap-lg, $width);
+  width: min(100% - $gap-xl, $xl);
 
   margin-inline: auto;
 }
